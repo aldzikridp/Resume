@@ -1,5 +1,5 @@
 {
-  description = "Proposal Pra-Skripsi";
+  description = "Resume";
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
 
@@ -18,7 +18,7 @@
           default = pkgs.mkShell {
             buildInputs = with pkgs; [
               texlab
-              texlive.combined.scheme-full
+              texliveFull
             ];
           };
         });

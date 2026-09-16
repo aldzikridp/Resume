@@ -18,62 +18,58 @@
     {September 2023 - Present}
     {
       \begin{cvitems}
-        \item {Managing Alibaba Cloud Services such as: ECS,
-          RDS, OSS, RAM, and ACK}
-        \item {Managing Alibaba Cloud Networking: VPCs, VSwitch, DNS, and Load Balancers.}
-        \item {Managing Kubernetes.}
-        \item {Monitoring running services and applications with CloudMonitor, ARMS, Log Service}
-        \item {Managing and deploying applications using Helm charts.}
-        \item {Implementing cloud security best practices.}
-        \item {Maintaining regulatory compliance for
-          sensitive financial data.}
-        \item {Prepating necessary infrastructure documents
-          for regulatory audits.}
+        \item {Operate the production Alibaba Cloud estate across Indonesian and
+          Malaysian regions: ECS, RDS, OSS, RAM, ACK, VPC/VSwitch, DNS, and Load
+          Balancers, deployed with Helm.}
+        \item {Raised platform uptime from 99.95\% to 99.995\% (approx.\ 4.4 hours
+          to 26 minutes of annual downtime) across ECS, RDS, and ACK through
+          scheduled maintenance to company SOP.}
+        \item {Increased server and cloud capacity to absorb traffic spikes of up to
+          20\% without downtime using auto-scaling and specification-matched instances,
+          and cut incident handling time by 10\% through alerting and monitoring automation.}
+        \item {Migrated remaining on-premises services and infrastructure to
+          Alibaba Cloud, provisioning production RDS instances and managing
+          database access through users and network whitelists.}
+        \item {Introduced Terraform as the infrastructure-as-code standard across all
+          environments, using an OSS remote state backend, modular configuration,
+          and GitLab CI pipelines, including automated disk snapshot and patching.}
+        \item {Introduced Kyverno as an admission policy engine where none existed,
+          enforcing resource limits across all clusters (sandbox, SIT, production)
+          to cut worker node usage; reduced cloud spend further by trimming log
+          indexing volume and tuning node autoscaling.}
+        \item {Applied topology spread constraints with the descheduler to distribute
+          pods evenly across availability zones, preventing a single-zone failure
+          from causing a total outage.}
+        \item {Mitigated critical-priority vulnerabilities across production ECS and
+          ACK workloads, facilitated quarterly ASV scans, and author PCI DSS
+          documentation spanning hardening, patching, access control, endpoint
+          security, logging, and intrusion detection -- recurring assessments
+          passed with all findings closed.}
       \end{cvitems}
     }
     \linebreak
 
   \cventry
-    {Server Management} % Job title
+    {Server Management Intern} % Job title
     {PT Pundi Mas Berjaya} % Organisation
     {Batam, Indonesia} % Location
-    {Agustus 2022 - Desember 2022} % Date(s)
+    {August 2022 - December 2022} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Hardware \& Software server maintenance}
-        \item {Monitoring \& Logging server}
-        \item {Monitoring \& Logging network}
-        \item {Troubleshooting}
-        \item {Setting-up email server}
-        \item {Managing DNS}
-        \item {Deploying container \& virtual machine}
-        \item {Designing Network}
+        \item {Maintained and monitored physical and virtual server hardware,
+          network logging, and DNS for an on-premises environment.}
+        \item {Deployed containerised and virtualised workloads; set up email
+          services.}
       \end{cvitems}
     }
 
   \cventry
-    {Web Admin}
+    {Web Admin Intern}
     {Dinas Kesehatan Prov. DIY}
     {Yogyakarta, Indonesia}
-    {Juli 2022 - Agustus 2022}
+    {July 2022 - August 2022}
     {
-      \begin{cvitems}
-      \item {Deploying \& Managing Web}
-      \item {Giving advice for web design}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Dicoding Kampus Merdeka, Front End Web \& Back End Developer}
-    {PT Presentologics}
-    {Bandung, Indonesia}
-    {Agustus 2021 - Januari 2022}
-    {
-      \begin{cvitems}
-      \item {AWS Cloud Training}
-      \item {Developing Javascript Web Apps}
-      \item {Deploying Javascript Web Apps}
-      \end{cvitems}
+      Deployed and maintained public health agency web services.
     }
 
 \end{cventries}
