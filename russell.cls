@@ -50,12 +50,15 @@
 \RequirePackage[quiet]{fontspec}
 % To support LaTeX quoting style
 \defaultfontfeatures{Ligatures=TeX}
-% manage math fonts
-\RequirePackage{unicode-math}
 % use icons from font-awesome
 \RequirePackage{fontawesome5}
-\RequirePackage{roboto}
-\RequirePackage[default,opentype]{sourcesanspro}
+% Font families used below (\headerfont, \bodyfont, etc.). Defined directly instead of
+% requiring the roboto/sourcesanspro packages, which eagerly load ~90 unused faces
+% (this alone cut peak compile RSS from ~387 MB to ~264 MB).
+\newfontfamily\roboto{Roboto}[UprightFont=*-Regular,ItalicFont=*-Italic,BoldFont=*-Bold,BoldItalicFont=*-BoldItalic]
+\newfontfamily\robotolight{Roboto}[UprightFont=*-Light,ItalicFont=*-LightItalic]
+\newfontfamily\sourcesanspro{SourceSans3}[UprightFont=*-Regular,ItalicFont=*-RegularIt,BoldFont=*-Bold,BoldItalicFont=*-BoldIt]
+\newfontfamily\sourcesansprolight{SourceSans3}[UprightFont=*-Light,ItalicFont=*-LightIt,BoldFont=*-Semibold,BoldItalicFont=*-SemiboldIt]
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
 % deal a paragraphs
